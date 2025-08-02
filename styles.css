@@ -49,7 +49,14 @@ h1 {
 main p, #char, #animatedText {
     font-family: 'Wavefont', system-ui;
     font-weight: 300;
-    font-size: 5rem;
+}
+
+main p, #animatedText {
+  font-size: 1.4rem;
+}
+
+#char {
+  font-size: 5rem;
 }
 
 footer {

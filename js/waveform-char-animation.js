@@ -11,8 +11,10 @@ turns them into individual spans to set them up to be looped through for the ani
 To avoid a wonky visual glitch when the page loads for the first time, this also sets up an opacity fade in
 */
 window.addEventListener('load', function() {
-    const mainLoaded = document.getElementById('mainFaded');
-    mainLoaded.classList.add('loaded');
+    setTimeout(function() {
+        const mainLoaded = document.getElementById('mainFaded');
+        mainLoaded.classList.add('loaded');
+    }, 50);
     
     const text = waveform.textContent; 
     const spanArray = [];

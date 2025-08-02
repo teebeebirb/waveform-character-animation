@@ -27,13 +27,13 @@ main {
   width: 86%;
 }
 
-main.fade-in {
-  opacity: 0;
-  transition: opacity 2.4s ease-in;
+fade-in {
+  opacity: 0 !important;
+  transition: opacity 2.4s ease-in !important;
 }
 
-main.fade-in.loaded {
-  opacity: 1;
+fade-in.loaded {
+  opacity: 1 !important;
 }
 
 .centered-box {

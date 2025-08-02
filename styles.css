@@ -24,12 +24,14 @@ main {
   padding: 2rem;
   height: 94%;
   width: 86%;
-  opacity: 0;
-  transition: opacity 1.5s ease-in;
-  
 }
 
-main.loaded {
+.fade-in {
+  opacity: 0;
+  transition: opacity 3.6s ease-in;
+}
+
+.fade-in.loaded {
   opacity: 1;
 }
 

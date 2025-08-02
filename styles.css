@@ -46,7 +46,7 @@ h1 {
     cursor: pointer;
 }
 
-#char, #animatedText {
+main p, #char, #animatedText {
     font-family: 'Wavefont', system-ui;
     font-weight: 300;
     font-size: 5rem;

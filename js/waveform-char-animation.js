@@ -12,8 +12,10 @@ To avoid a wonky visual glitch when the page loads for the first time, this also
 */
 window.addEventListener('load', function() {
     requestAnimationFrame(function() {
-        const mainLoaded = document.getElementById('mainFaded');
-        mainLoaded.classList.add('loaded');
+        requestAnimationFrame(function() {
+            const mainLoaded = document.getElementById('mainFaded');
+            mainLoaded.classList.add('loaded');
+        });
     });
 
     const text = waveform.textContent; 

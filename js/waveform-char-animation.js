@@ -6,15 +6,14 @@ const waveform = document.getElementById('animatedText');
 will use to animate the string */
 const waveformCharacters = [' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-// To avoid a wonky visual glitch when the page loads for the first time, this sets up an opacity fade in
-document.addEventListener('DOMContentLoaded', function(event) {
+/* When the page loads, the script takes the characters in the waveform and 
+turns them into individual spans to set them up to be looped through for the animation. 
+To avoid a wonky visual glitch when the page loads for the first time, this also sets up an opacity fade in
+*/
+window.addEventListener('load', function() {
     const mainLoaded = document.getElementById('mainFaded');
     mainLoaded.classList.add('loaded');
-});
-
-/* When the page loads, the script takes the characters in the waveform and 
-turns them into individual spans to set them up to be looped through for the animation. */
-window.addEventListener('load', function() {
+    
     const text = waveform.textContent; 
     const spanArray = [];
 

@@ -9,7 +9,7 @@ const waveformCharacters = [' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j
 
 /* When the page loads, the script takes the characters in the waveform and 
 turns them into individual spans to set them up to be looped through for the animation. */
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
     const text = waveform.textContent; 
     const spanArray = [];
 
